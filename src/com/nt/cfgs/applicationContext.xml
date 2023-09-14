@@ -6,10 +6,30 @@ https://www.springframework.org/schema/beans/spring-beans.xsd">
 
   <!-- Dependent spring bean cfg -->
   <bean id="dt"  class="java.util.Date"/>
+  <bean id = "dt1" class="java.util.Date">
+  	<property name="year" value="110" />
+  	<property name="date" value="5"/>
+  	<property name="month" value="4"/>
+  </bean>
   
   <!-- Target spring bean cfg -->
   <bean id="wmg"  class="com.nt.beans.WishMessageGenerator">
+  	 	<property name="date" ref="dt1" />
       <constructor-arg name="theDate" ref="dt"></constructor-arg>
+  </bean>
+  
+  <bean id="per" class="com.nt.beans.Person">
+<!--   	<property name="pid" value="1001" /> -->
+<!--   	<property name="pname" value="raja" /> -->
+  	<property name="padders" value="Hyd" />
+  	<property name="income" value="11155.100f" />
+  </bean>
+  
+  <bean id="per1" class="com.nt.beans.Person1">
+  	<constructor-arg name="pid" value="1008" />
+  	<constructor-arg name="pname" value="rajkumar" />
+  	<constructor-arg name="padders" value="Madras" />
+  	<constructor-arg name="income" value="10000000.99f" />  	
   </bean>
 
 

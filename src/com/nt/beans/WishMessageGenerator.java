@@ -6,7 +6,7 @@ import java.util.Date;
 public class WishMessageGenerator {
 	private Date date; // ctrl +shift+o :: To import pkg
 
-	/*public WishMessageGenerator() {
+	public WishMessageGenerator() {
 		System.out.println("WishMessageGenerator:: 0-param consturctor");
 	}
 	
@@ -14,7 +14,7 @@ public class WishMessageGenerator {
 	public void setDate(Date date) {
 		System.out.println("WishMessageGenerator.setDate(-)");
 		this.date = date;
-	}*/
+	}
 
 	public WishMessageGenerator(Date theDate) {
 		System.out.println("WishMessageGenerator:1-param constructor");
